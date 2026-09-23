@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Users | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="users.html">Users</a
+      ><a class="side-link" href="departments.html">Departments</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="skills.html">Skills</a
+      ><a class="side-link" href="career-profiles.html">Career Profiles</a
+      ><a class="side-link" href="learning-resources.html">Learning Resources</a
+      ><a class="side-link" href="system-analytics.html">System Analytics</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Users</h1>
+            <p class="muted">Manage students and faculty accounts.</p>
+          </div>
+          <button class="btn" onclick="openModal('userModal')">
+            + Add User
+          </button>
+        </div>
+        <div class="toolbar">
+          <input
+            class="form-control"
+            placeholder="Search users..."
+            oninput="filterRows(this.value)"
+          /><select class="form-control">
+            <option>All Roles</option>
+            <option>Student</option>
+            <option>Faculty</option>
+            <option>Admin</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>U001</td>
+                <td>Tanvi</td>
+                <td>tanvi@example.com</td>
+                <td>Student</td>
+                <td>Information Technology</td>
+                <td><span class="badge success">Active</span></td>
+                <td>
+                  <button class="btn secondary" onclick="toast('Edit user')">
+                    Edit
+                  </button>
+                  <button
+                    class="btn danger"
+                    onclick="toast('User deactivated')"
+                  >
+                    Deactivate
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>U003</td>
+                <td>Prof. Mehta</td>
+                <td>mehta@example.com</td>
+                <td>Faculty</td>
+                <td>Information Technology</td>
+                <td><span class="badge success">Active</span></td>
+                <td><button class="btn secondary">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal" id="userModal">
+          <div class="modal-box">
+            <div class="modal-head">
+              <h2>Add User</h2>
+              <button class="close" onclick="closeModal('userModal')">×</button>
+            </div>
+            <div class="form-group">
+              <label>Name</label><input class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Email</label><input class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Role</label
+              ><select class="form-control">
+                <option>Student</option>
+                <option>Faculty</option>
+              </select>
+            </div>
+            <button
+              class="btn"
+              onclick="
+                closeModal('userModal');
+                toast('User added');
+              "
+            >
+              Add User
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

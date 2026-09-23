@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Student Dashboard</h1>
+            <p class="muted">Semester-wise overview of your skills.</p>
+          </div>
+          <select class="form-control" style="max-width: 180px">
+            <option>Semester 3</option>
+            <option>Semester 2</option>
+            <option>Semester 1</option>
+            <option>Semester 4</option>
+            <option>Semester 5</option>
+            <option>Semester 6</option>
+            <option>Semester 7</option>
+            <option>Semester 8</option>
+          </select>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="label">Total Skills</div>
+            <div class="value" id="totalSkills">8</div>
+          </div>
+          <div class="stat">
+            <div class="label">Verified Skills</div>
+            <div class="value" id="verifiedSkills">5</div>
+          </div>
+          <div class="stat">
+            <div class="label">Skills in Progress</div>
+            <div class="value" id="inProgress">3</div>
+          </div>
+          <div class="stat">
+            <div class="label">Projects Completed</div>
+            <div class="value" id="projects">2</div>
+          </div>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Current Semester</h3>
+            <div class="value" id="semester">3</div>
+            <p class="muted">Information Technology</p>
+          </div>
+          <div class="card">
+            <h3>Overall Skill Progress</h3>
+            <div class="value" id="overall">68%</div>
+            <div class="progress"><span style="width: 68%"></span></div>
+          </div>
+          <div class="card">
+            <h3>Quick Actions</h3>
+            <p><a class="btn" href="skills.html">+ Add Skill</a></p>
+            <p><a class="btn secondary" href="resume.html">View Resume</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

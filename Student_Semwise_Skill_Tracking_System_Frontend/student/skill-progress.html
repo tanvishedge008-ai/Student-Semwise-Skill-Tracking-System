@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skill-Progress | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Skill Progress</h1>
+            <p class="muted">Visual analytics of your learning journey.</p>
+          </div>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Semester-wise Progress</h3>
+            <div class="chart">
+              <div class="barwrap">
+                <div class="bar" style="height: 70px"></div>
+                <small>Sem 1</small>
+              </div>
+              <div class="barwrap">
+                <div class="bar" style="height: 100px"></div>
+                <small>Sem 2</small>
+              </div>
+              <div class="barwrap">
+                <div class="bar" style="height: 136px"></div>
+                <small>Sem 3</small>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Category-wise Progress</h3>
+            <p>Web Development — 78%</p>
+            <div class="progress"><span style="width: 78%"></span></div>
+            <p>Programming — 52%</p>
+            <div class="progress"><span style="width: 52%"></span></div>
+            <p>Database — 55%</p>
+            <div class="progress"><span style="width: 55%"></span></div>
+          </div>
+          <div class="card">
+            <h3>Assessment Scores</h3>
+            <p>Java Fundamentals — 72%</p>
+            <p>Python — 84%</p>
+            <p>Database — 80%</p>
+            <p>Web Development — 88%</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

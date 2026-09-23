@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Learning-Roadmap | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Learning Roadmap</h1>
+            <p class="muted">
+              A guided path toward Full Stack Java development.
+            </p>
+          </div>
+        </div>
+        <div class="roadmap">
+          <div class="roaditem">
+            <div class="card">
+              <h3>HTML</h3>
+              <p class="muted">Structure web pages</p>
+              <div class="progress"><span style="width: 100%"></span></div>
+              <small>Completed • 100%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>CSS</h3>
+              <p class="muted">Style responsive interfaces</p>
+              <div class="progress"><span style="width: 100%"></span></div>
+              <small>Completed • 100%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>JavaScript</h3>
+              <p class="muted">Add frontend behavior</p>
+              <div class="progress"><span style="width: 80%"></span></div>
+              <small>In Progress • 80%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>Java</h3>
+              <p class="muted">Core programming and OOP</p>
+              <div class="progress"><span style="width: 45%"></span></div>
+              <small>In Progress • 45%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>SQL</h3>
+              <p class="muted">Query relational databases</p>
+              <div class="progress"><span style="width: 70%"></span></div>
+              <small>In Progress • 70%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>Spring Boot</h3>
+              <p class="muted">Build Java REST APIs</p>
+              <div class="progress"><span style="width: 20%"></span></div>
+              <small>Not Started • 20%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>REST API</h3>
+              <p class="muted">Connect frontend and backend</p>
+              <div class="progress"><span style="width: 10%"></span></div>
+              <small>Not Started • 10%</small>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="roaditem">
+            <div class="card">
+              <h3>Full Stack Java</h3>
+              <p class="muted">Integrate complete application</p>
+              <div class="progress"><span style="width: 0%"></span></div>
+              <small>Not Started • 0%</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

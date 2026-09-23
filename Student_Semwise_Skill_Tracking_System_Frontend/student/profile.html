@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>My Profile</h1>
+            <p class="muted">Manage your student information.</p>
+          </div>
+        </div>
+        <div class="card">
+          <form id="profileForm">
+            <div class="grid grid3">
+              <div class="form-group">
+                <label>Student Name</label
+                ><input class="form-control" data-profile="name" />
+              </div>
+              <div class="form-group">
+                <label>Student ID</label
+                ><input class="form-control" data-profile="id" />
+              </div>
+              <div class="form-group">
+                <label>Email</label
+                ><input class="form-control" data-profile="email" />
+              </div>
+              <div class="form-group">
+                <label>Phone</label
+                ><input class="form-control" data-profile="phone" />
+              </div>
+              <div class="form-group">
+                <label>Department</label
+                ><input class="form-control" data-profile="department" />
+              </div>
+              <div class="form-group">
+                <label>College</label
+                ><input class="form-control" data-profile="college" />
+              </div>
+              <div class="form-group">
+                <label>Current Semester</label
+                ><input class="form-control" data-profile="semester" />
+              </div>
+              <div class="form-group">
+                <label>CGPA</label
+                ><input class="form-control" data-profile="cgpa" />
+              </div>
+            </div>
+            <button class="btn">Save Profile</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skills | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>My Skills</h1>
+            <p class="muted">Track level, progress and faculty verification.</p>
+          </div>
+          <button class="btn" onclick="openModal('skillModal')">
+            + Add Skill
+          </button>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Category</th>
+                <th>Level</th>
+                <th>Progress</th>
+                <th>Semester</th>
+                <th>Verification</th>
+              </tr>
+            </thead>
+            <tbody id="skillsRows"></tbody>
+          </table>
+        </div>
+        <div class="modal" id="skillModal">
+          <div class="modal-box">
+            <div class="modal-head">
+              <h2>Add Skill</h2>
+              <button class="close" onclick="closeModal('skillModal')">
+                ×
+              </button>
+            </div>
+            <form onsubmit="addSkill(event)">
+              <div class="form-group">
+                <label>Skill Name</label
+                ><input class="form-control" id="skillName" required />
+              </div>
+              <div class="form-group">
+                <label>Category</label
+                ><select class="form-control" id="skillCategory">
+                  <option>Programming</option>
+                  <option>Web Development</option>
+                  <option>Database</option>
+                  <option>AI/ML</option>
+                  <option>Cloud</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Level</label
+                ><select class="form-control" id="skillLevel">
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                  <option>Expert</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Progress %</label
+                ><input
+                  class="form-control"
+                  id="skillProgress"
+                  type="number"
+                  min="0"
+                  max="100"
+                  value="10"
+                />
+              </div>
+              <div class="form-group">
+                <label>Semester</label
+                ><select class="form-control" id="skillSemester">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Description / Evidence Link</label
+                ><textarea class="form-control"></textarea>
+              </div>
+              <button class="btn">Add Skill</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skill-Gap | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Skill Gap Analysis</h1>
+            <p class="muted">Career target: Full Stack Java Developer</p>
+          </div>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Current Skills</h3>
+            <p>Java</p>
+            <p>HTML • CSS • JavaScript</p>
+            <p>SQL • PostgreSQL</p>
+            <p>Git</p>
+          </div>
+          <div class="card">
+            <h3>Required Skills</h3>
+            <p>Java • Spring Boot</p>
+            <p>REST API • SQL</p>
+            <p>PostgreSQL • Git</p>
+            <p>Frontend Development</p>
+          </div>
+          <div class="card">
+            <h3>Missing / Developing</h3>
+            <p><b>Spring Boot — 20%</b></p>
+            <div class="progress"><span style="width: 20%"></span></div>
+            <br />
+            <p><b>REST API — 10%</b></p>
+            <div class="progress"><span style="width: 10%"></span></div>
+            <br /><button
+              class="btn"
+              onclick="toast('Learning roadmap opened')"
+            >
+              Start Learning
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Semesters | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="users.html">Users</a
+      ><a class="side-link" href="departments.html">Departments</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="skills.html">Skills</a
+      ><a class="side-link" href="career-profiles.html">Career Profiles</a
+      ><a class="side-link" href="learning-resources.html">Learning Resources</a
+      ><a class="side-link" href="system-analytics.html">System Analytics</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div><h1>Semesters</h1></div>
+          <button class="btn" onclick="toast('Semester added')">
+            + Add Semester
+          </button>
+        </div>
+        <div class="grid grid4">
+          <div class="card">
+            <h3>Semester 1</h3>
+            <span class="badge success">Active</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 2</h3>
+            <span class="badge success">Active</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 3</h3>
+            <span class="badge success">Active</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 4</h3>
+            <span class="badge warning">Inactive</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 5</h3>
+            <span class="badge warning">Inactive</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 6</h3>
+            <span class="badge warning">Inactive</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 7</h3>
+            <span class="badge warning">Inactive</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Semester 8</h3>
+            <span class="badge warning">Inactive</span><br /><br /><button
+              class="btn secondary"
+              onclick="toast('Semester updated')"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

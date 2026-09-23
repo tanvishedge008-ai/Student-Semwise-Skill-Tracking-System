@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Career-Profiles | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="users.html">Users</a
+      ><a class="side-link" href="departments.html">Departments</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="skills.html">Skills</a
+      ><a class="side-link" href="career-profiles.html">Career Profiles</a
+      ><a class="side-link" href="learning-resources.html">Learning Resources</a
+      ><a class="side-link" href="system-analytics.html">System Analytics</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div><h1>Career Profiles</h1></div>
+          <button class="btn" onclick="toast('Career profile added')">
+            + Add Career
+          </button>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Full Stack Java Developer</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Python Developer</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Web Developer</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Data Analyst</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Software Developer</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>Cloud Engineer</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+          <div class="card">
+            <h3>AI/ML Engineer</h3>
+            <p class="muted">
+              Required skills and recommended learning roadmap.
+            </p>
+            <p><b>Required:</b> Java, SQL, Git, Communication</p>
+            <button class="btn secondary" onclick="toast('Career edited')">
+              Edit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

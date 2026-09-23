@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="auth">
+      <div class="auth-card">
+        <div class="logo">◆ SST System</div>
+        <h1>Create Account</h1>
+        <form onsubmit="registerDemo(event)">
+          <div class="form-group">
+            <label>Full Name</label><input class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label
+            ><input class="form-control" type="email" required />
+          </div>
+          <div class="form-group">
+            <label>Role</label
+            ><select class="form-control">
+              <option>Student</option>
+              <option>Faculty</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Password</label
+            ><input
+              class="form-control"
+              id="regPassword"
+              type="password"
+              required
+            />
+          </div>
+          <button class="btn btn-primary">Create Account</button
+          ><a class="btn btn-outline" href="login.html">Back to Login</a>
+        </form>
+      </div>
+    </div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

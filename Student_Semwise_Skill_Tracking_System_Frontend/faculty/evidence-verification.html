@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Evidence-Verification | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="students.html">Students</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="analytics.html">Analytics</a
+      ><a class="side-link" href="skill-assessments.html">Skill Assessments</a
+      ><a class="side-link" href="evidence-verification.html"
+        >Evidence Verification</a
+      ><a class="side-link" href="reports.html">Reports</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Evidence Verification</h1>
+            <p class="muted">Verify student-submitted skill evidence.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Student</th>
+                <th>Skill</th>
+                <th>Evidence</th>
+                <th class="status">Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rahul Sharma</td>
+                <td>Java</td>
+                <td>Java Project / Certificate / GitHub</td>
+                <td class="status">
+                  <span class="badge warning">Pending</span>
+                </td>
+                <td>
+                  <button class="btn" onclick="toast('Evidence opened')">
+                    View
+                  </button>
+                  <button class="btn" onclick="verify(this)">Verify</button>
+                  <button class="btn danger" onclick="reject(this)">
+                    Reject
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Tanvi</td>
+                <td>PostgreSQL</td>
+                <td>Database Project</td>
+                <td class="status">
+                  <span class="badge warning">Pending</span>
+                </td>
+                <td>
+                  <button class="btn" onclick="verify(this)">Verify</button>
+                  <button class="btn danger" onclick="reject(this)">
+                    Reject
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skills | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="users.html">Users</a
+      ><a class="side-link" href="departments.html">Departments</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="skills.html">Skills</a
+      ><a class="side-link" href="career-profiles.html">Career Profiles</a
+      ><a class="side-link" href="learning-resources.html">Learning Resources</a
+      ><a class="side-link" href="system-analytics.html">System Analytics</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div><h1>Skill Management</h1></div>
+          <button class="btn" onclick="toast('Skill added')">
+            + Add Skill
+          </button>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Difficulty</th>
+                <th>Related Career</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Java</td>
+                <td>Programming</td>
+                <td>Skill used for student development</td>
+                <td>Intermediate</td>
+                <td>Full Stack Java Developer</td>
+                <td>
+                  <button class="btn secondary">Edit</button>
+                  <button class="btn danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Spring Boot</td>
+                <td>Cloud</td>
+                <td>Skill used for student development</td>
+                <td>Advanced</td>
+                <td>Full Stack Java Developer</td>
+                <td>
+                  <button class="btn secondary">Edit</button>
+                  <button class="btn danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Programming</td>
+                <td>Skill used for student development</td>
+                <td>Intermediate</td>
+                <td>Python Developer</td>
+                <td>
+                  <button class="btn secondary">Edit</button>
+                  <button class="btn danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td>Database</td>
+                <td>Skill used for student development</td>
+                <td>Beginner</td>
+                <td>Data Analyst</td>
+                <td>
+                  <button class="btn secondary">Edit</button>
+                  <button class="btn danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Git</td>
+                <td>DevOps</td>
+                <td>Skill used for student development</td>
+                <td>Beginner</td>
+                <td>Software Developer</td>
+                <td>
+                  <button class="btn secondary">Edit</button>
+                  <button class="btn danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

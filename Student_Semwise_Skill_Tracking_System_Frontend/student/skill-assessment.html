@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skill-Assessment | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="profile.html">My Profile</a
+      ><a class="side-link" href="skills.html">My Skills</a
+      ><a class="side-link" href="semester-history.html">Semester History</a
+      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
+      ><a class="side-link" href="projects.html">Projects</a
+      ><a class="side-link" href="skill-gap.html">Skill Gap</a
+      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
+      ><a class="side-link" href="skill-progress.html">Skill Progress</a
+      ><a class="side-link" href="resume.html">Resume</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Skill Assessment</h1>
+            <p class="muted">Practice frontend demo quizzes.</p>
+          </div>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Java Fundamentals</h3>
+            <p class="muted">10 questions • 15 minutes</p>
+            <button
+              class="btn"
+              onclick="toast('Demo assessment started for Java Fundamentals')"
+            >
+              Start Assessment
+            </button>
+          </div>
+          <div class="card">
+            <h3>Python Programming</h3>
+            <p class="muted">10 questions • 15 minutes</p>
+            <button
+              class="btn"
+              onclick="toast('Demo assessment started for Python Programming')"
+            >
+              Start Assessment
+            </button>
+          </div>
+          <div class="card">
+            <h3>Database Management</h3>
+            <p class="muted">10 questions • 15 minutes</p>
+            <button
+              class="btn"
+              onclick="toast('Demo assessment started for Database Management')"
+            >
+              Start Assessment
+            </button>
+          </div>
+          <div class="card">
+            <h3>Web Development</h3>
+            <p class="muted">10 questions • 15 minutes</p>
+            <button
+              class="btn"
+              onclick="toast('Demo assessment started for Web Development')"
+            >
+              Start Assessment
+            </button>
+          </div>
+          <div class="card">
+            <h3>Data Structures</h3>
+            <p class="muted">10 questions • 15 minutes</p>
+            <button
+              class="btn"
+              onclick="toast('Demo assessment started for Data Structures')"
+            >
+              Start Assessment
+            </button>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 20px">
+          <h3>Assessment Summary</h3>
+          <p>Completed: 3</p>
+          <p>Pending: 2</p>
+          <p>Average Score: 81%</p>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

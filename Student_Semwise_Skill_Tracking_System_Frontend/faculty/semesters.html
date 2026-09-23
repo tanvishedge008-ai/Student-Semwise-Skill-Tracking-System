@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Semesters | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="students.html">Students</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="analytics.html">Analytics</a
+      ><a class="side-link" href="skill-assessments.html">Skill Assessments</a
+      ><a class="side-link" href="evidence-verification.html"
+        >Evidence Verification</a
+      ><a class="side-link" href="reports.html">Reports</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Semester Monitoring</h1>
+            <p class="muted">Select department, semester and student.</p>
+          </div>
+        </div>
+        <div class="toolbar">
+          <select class="form-control">
+            <option>Information Technology</option>
+            <option>Computer Engineering</option></select
+          ><select class="form-control">
+            <option>Semester 3</option>
+            <option>Semester 2</option>
+            <option>Semester 1</option></select
+          ><select class="form-control">
+            <option>Tanvi</option>
+            <option>Rahul Sharma</option>
+          </select>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Skills</h3>
+            <p>HTML, CSS, JavaScript, Java, Python, SQL, PostgreSQL, Git</p>
+          </div>
+          <div class="card">
+            <h3>Projects</h3>
+            <p>Student Skill Tracking System</p>
+            <p>Electricity Billing System</p>
+          </div>
+          <div class="card">
+            <h3>Progress</h3>
+            <div class="value">68%</div>
+            <div class="progress"><span style="width: 68%"></span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

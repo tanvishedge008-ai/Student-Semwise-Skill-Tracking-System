@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard | Student Skill Tracking System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body class="app-page">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">SST System</div>
+      <a class="side-link" href="dashboard.html">Dashboard</a
+      ><a class="side-link" href="students.html">Students</a
+      ><a class="side-link" href="semesters.html">Semesters</a
+      ><a class="side-link" href="analytics.html">Analytics</a
+      ><a class="side-link" href="skill-assessments.html">Skill Assessments</a
+      ><a class="side-link" href="evidence-verification.html"
+        >Evidence Verification</a
+      ><a class="side-link" href="reports.html">Reports</a
+      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile" id="menu">☰</button
+        ><input
+          id="globalSearch"
+          class="form-control search"
+          placeholder="Search..."
+        />
+        <div class="profile-mini">
+          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+        </div>
+      </header>
+      <section class="page">
+        <div class="page-head">
+          <div>
+            <h1>Faculty Dashboard</h1>
+            <p class="muted">Monitor student skills and verification.</p>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="label">Total Students</div>
+            <div class="value">128</div>
+          </div>
+          <div class="stat">
+            <div class="label">Pending Verifications</div>
+            <div class="value">24</div>
+          </div>
+          <div class="stat">
+            <div class="label">Completed Assessments</div>
+            <div class="value">96</div>
+          </div>
+          <div class="stat">
+            <div class="label">Average Skill Progress</div>
+            <div class="value">71%</div>
+          </div>
+        </div>
+        <div class="grid grid3">
+          <div class="card">
+            <h3>Recent Verification</h3>
+            <p>Rahul Sharma — Java</p>
+            <span class="badge warning">Pending</span>
+          </div>
+          <div class="card">
+            <h3>Department Progress</h3>
+            <div class="progress"><span style="width: 71%"></span></div>
+            <p>71% average</p>
+          </div>
+          <div class="card">
+            <h3>Quick Action</h3>
+            <a class="btn" href="evidence-verification.html">Review Evidence</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
