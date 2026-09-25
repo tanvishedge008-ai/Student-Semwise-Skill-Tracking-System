@@ -7,72 +7,112 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
+
   <body class="app-page">
+
     <aside class="sidebar" id="sidebar">
       <div class="brand">SST System</div>
-      <a class="side-link" href="dashboard.html">Dashboard</a
-      ><a class="side-link" href="profile.html">My Profile</a
-      ><a class="side-link" href="skills.html">My Skills</a
-      ><a class="side-link" href="semester-history.html">Semester History</a
-      ><a class="side-link" href="skill-assessment.html">Skill Assessment</a
-      ><a class="side-link" href="projects.html">Projects</a
-      ><a class="side-link" href="skill-gap.html">Skill Gap</a
-      ><a class="side-link" href="learning-roadmap.html">Learning Roadmap</a
-      ><a class="side-link" href="skill-progress.html">Skill Progress</a
-      ><a class="side-link" href="resume.html">Resume</a
-      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+
+      <a class="side-link" href="dashboard.html">Dashboard</a>
+      <a class="side-link" href="profile.html">My Profile</a>
+      <a class="side-link" href="skills.html">My Skills</a>
+      <a class="side-link" href="semester-history.html">Semester History</a>
+      <a class="side-link" href="skill-assessment.html">Skill Assessment</a>
+      <a class="side-link" href="projects.html">Projects</a>
+      <a class="side-link" href="skill-gap.html">Skill Gap</a>
+      <a class="side-link" href="learning-roadmap.html">Learning Roadmap</a>
+      <a class="side-link" href="skill-progress.html">Skill Progress</a>
+      <a class="side-link" href="resume.html">Resume</a>
+      <a class="side-link" href="javascript:logout()">↪ Logout</a>
     </aside>
+
     <main class="main">
+
       <header class="topbar">
-        <button class="mobile" id="menu">☰</button
-        ><input
+        <button class="mobile" id="menu">☰</button>
+
+        <input
           id="globalSearch"
           class="form-control search"
           placeholder="Search..."
         />
+
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name>Student</span>
+          <span class="avatar" data-avatar>S</span>
         </div>
       </header>
+
       <section class="page">
+
         <div class="resume-actions">
           <button class="btn" onclick="printResume()">
             Print / Save as PDF
           </button>
         </div>
+
         <div class="resume">
+
           <div class="resume-head">
-            <h1 id="rname">Tanvi</h1>
+            <h1 id="rname">Student</h1>
+
             <p id="rcontact" class="muted">
-              tanvi@example.com | +91 98765 43210 | Information Technology
+              Email: Not provided
             </p>
           </div>
+
+
           <h2>Career Objective</h2>
-          <p>
-            Motivated IT engineering student seeking opportunities to apply
-            programming, web development and database skills while continuously
-            learning modern software technologies.
+
+          <p id="robjective">
+            Career objective not provided.
           </p>
+
+
           <h2>Education</h2>
-          <p>
-            <b>BE — Information Technology</b><br />ABC College of
-            Engineering<br />Current Semester: 3 | CGPA: 8.6
+
+          <p id="reducation">
+            Education information not provided.
           </p>
+
+
           <h2>Technical Skills</h2>
-          <ul id="rskills"></ul>
+
+          <ul id="rskills">
+            <li>No skills added yet.</li>
+          </ul>
+
+
           <h2>Projects</h2>
-          <ul id="rprojects"></ul>
+
+          <ul id="rprojects">
+            <li>No projects added yet.</li>
+          </ul>
+
+
           <h2>Certifications</h2>
-          <p>
-            Java / Python / Web Development certifications can be added through
-            the backend later.
+
+          <p id="rcertifications">
+            No certifications added yet.
           </p>
+
+
           <h2>Achievements</h2>
-          <p>Semester-wise skill tracking and project work.</p>
+
+          <p id="rachievements">
+            No achievements added yet.
+          </p>
+
         </div>
+
       </section>
+
     </main>
+
     <div class="toast" id="toast"></div>
+
+    <script src="../js/api.js"></script>
     <script src="../js/main.js"></script>
+
   </body>
 </html>

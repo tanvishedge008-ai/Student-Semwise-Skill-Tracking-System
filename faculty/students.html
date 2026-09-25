@@ -4,59 +4,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Students | Student Skill Tracking System</title>
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
+
   <body class="app-page">
+
     <aside class="sidebar" id="sidebar">
       <div class="brand">SST System</div>
-      <a class="side-link" href="dashboard.html">Dashboard</a
-      ><a class="side-link" href="students.html">Students</a
-      ><a class="side-link" href="semesters.html">Semesters</a
-      ><a class="side-link" href="analytics.html">Analytics</a
-      ><a class="side-link" href="skill-assessments.html">Skill Assessments</a
-      ><a class="side-link" href="evidence-verification.html"
-        >Evidence Verification</a
-      ><a class="side-link" href="reports.html">Reports</a
-      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+
+      <a class="side-link" href="dashboard.html">Dashboard</a>
+      <a class="side-link" href="students.html">Students</a>
+      <a class="side-link" href="semesters.html">Semesters</a>
+      <a class="side-link" href="analytics.html">Analytics</a>
+      <a class="side-link" href="skill-assessments.html">
+        Skill Assessments
+      </a>
+      <a class="side-link" href="evidence-verification.html">
+        Evidence Verification
+      </a>
+      <a class="side-link" href="reports.html">Reports</a>
+      <a class="side-link" href="javascript:logout()">↪ Logout</a>
     </aside>
+
     <main class="main">
+
       <header class="topbar">
-        <button class="mobile" id="menu">☰</button
-        ><input
+
+        <button class="mobile" id="menu">☰</button>
+
+        <input
           id="globalSearch"
           class="form-control search"
           placeholder="Search..."
         />
+
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span>
+          <span class="avatar" data-avatar></span>
         </div>
+
       </header>
+
       <section class="page">
+
         <div class="page-head">
           <div>
             <h1>Students</h1>
-            <p class="muted">Search and filter student records.</p>
+            <p class="muted">
+              Search and filter student records.
+            </p>
           </div>
         </div>
+
         <div class="toolbar">
+
           <input
             class="form-control"
             placeholder="Search students..."
             oninput="filterRows(this.value)"
-          /><select class="form-control">
-            <option>All Departments</option>
-            <option>Information Technology</option>
-            <option>Computer Engineering</option></select
-          ><select class="form-control">
-            <option>All Semesters</option>
-            <option>Semester 1</option>
-            <option>Semester 2</option>
-            <option>Semester 3</option>
+          />
+
+          <select class="form-control" id="departmentFilter">
+            <option value="">All Departments</option>
+            <option value="Information Technology">
+              Information Technology
+            </option>
+            <option value="Computer Engineering">
+              Computer Engineering
+            </option>
           </select>
+
+          <select class="form-control" id="semesterFilter">
+            <option value="">All Semesters</option>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+          </select>
+
         </div>
+
         <div class="table-wrap">
+
           <table class="table">
+
             <thead>
               <tr>
                 <th>ID</th>
@@ -69,41 +106,30 @@
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody>
+
+            <tbody id="facultyStudentsBody">
+
               <tr>
-                <td>IT2024XXX</td>
-                <td>Tanvi</td>
-                <td>Information Technology</td>
-                <td>3</td>
-                <td>8</td>
-                <td>68%</td>
-                <td><span class="badge success">Verified</span></td>
-                <td>
-                  <button class="btn" onclick="toast('Student profile opened')">
-                    View
-                  </button>
+                <td colspan="8">
+                  Loading students...
                 </td>
               </tr>
-              <tr>
-                <td>CE2024XX1</td>
-                <td>Rahul Sharma</td>
-                <td>Computer Engineering</td>
-                <td>3</td>
-                <td>10</td>
-                <td>72%</td>
-                <td><span class="badge warning">Pending</span></td>
-                <td>
-                  <button class="btn" onclick="toast('Student profile opened')">
-                    View
-                  </button>
-                </td>
-              </tr>
+
             </tbody>
+
           </table>
+
         </div>
+
       </section>
+
     </main>
+
     <div class="toast" id="toast"></div>
+
+    <script src="../js/api.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/faculty.js"></script>
+
   </body>
 </html>

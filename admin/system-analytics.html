@@ -2,87 +2,326 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>System-Analytics | Student Skill Tracking System</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/dashboard.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+
+    <title>
+      System Analytics | Student Skill Tracking System
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/dashboard.css"
+    />
   </head>
+
   <body class="app-page">
-    <aside class="sidebar" id="sidebar">
-      <div class="brand">SST System</div>
-      <a class="side-link" href="dashboard.html">Dashboard</a
-      ><a class="side-link" href="users.html">Users</a
-      ><a class="side-link" href="departments.html">Departments</a
-      ><a class="side-link" href="semesters.html">Semesters</a
-      ><a class="side-link" href="skills.html">Skills</a
-      ><a class="side-link" href="career-profiles.html">Career Profiles</a
-      ><a class="side-link" href="learning-resources.html">Learning Resources</a
-      ><a class="side-link" href="system-analytics.html">System Analytics</a
-      ><a class="side-link" href="javascript:logout()">↪ Logout</a>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside
+      class="sidebar"
+      id="sidebar"
+    >
+
+      <div class="brand">
+        SST System
+      </div>
+
+      <a
+        class="side-link"
+        href="dashboard.html"
+      >
+        Dashboard
+      </a>
+
+      <a
+        class="side-link"
+        href="users.html"
+      >
+        Users
+      </a>
+
+      <a
+        class="side-link"
+        href="departments.html"
+      >
+        Departments
+      </a>
+
+      <a
+        class="side-link"
+        href="semesters.html"
+      >
+        Semesters
+      </a>
+
+      <a
+        class="side-link"
+        href="skills.html"
+      >
+        Skills
+      </a>
+
+      <a
+        class="side-link"
+        href="career-profiles.html"
+      >
+        Career Profiles
+      </a>
+
+      <a
+        class="side-link"
+        href="learning-resources.html"
+      >
+        Learning Resources
+      </a>
+
+      <a
+        class="side-link"
+        href="system-analytics.html"
+      >
+        System Analytics
+      </a>
+
+      <a
+        class="side-link"
+        href="javascript:logout()"
+      >
+        ↪ Logout
+      </a>
+
     </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
     <main class="main">
+
+      <!-- ================= TOPBAR ================= -->
+
       <header class="topbar">
-        <button class="mobile" id="menu">☰</button
-        ><input
+
+        <button
+          class="mobile"
+          id="menu"
+        >
+          ☰
+        </button>
+
+        <input
           id="globalSearch"
           class="form-control search"
           placeholder="Search..."
         />
+
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+
+          <span data-name></span>
+
+          <span
+            class="avatar"
+            data-avatar
+          ></span>
+
         </div>
+
       </header>
+
+
+      <!-- ================= PAGE ================= -->
+
       <section class="page">
+
         <div class="page-head">
+
           <div>
-            <h1>System Analytics</h1>
-            <p class="muted">Overall platform statistics.</p>
-          </div>
-        </div>
-        <div class="stats">
-          <div class="stat">
-            <div class="label">Active Users</div>
-            <div class="value">149</div>
-          </div>
-          <div class="stat">
-            <div class="label">Skills Added</div>
-            <div class="value">842</div>
-          </div>
-          <div class="stat">
-            <div class="label">Skills Verified</div>
-            <div class="value">641</div>
-          </div>
-          <div class="stat">
-            <div class="label">Resume Generations</div>
-            <div class="value">318</div>
-          </div>
-        </div>
-        <div class="grid grid3">
-          <div class="card">
-            <h3>Department Statistics</h3>
-            <p>IT — 52%</p>
-            <div class="progress"><span style="width: 52%"></span></div>
-            <p>CE — 31%</p>
-            <div class="progress"><span style="width: 31%"></span></div>
-            <p>Other — 17%</p>
-            <div class="progress"><span style="width: 17%"></span></div>
-          </div>
-          <div class="card">
-            <h3>Semester Statistics</h3>
-            <p>
-              Semester 3 has the highest active skill records in this demo
-              dataset.
+
+            <h1>
+              System Analytics
+            </h1>
+
+            <p class="muted">
+              Overall platform statistics.
             </p>
+
           </div>
-          <div class="card">
-            <h3>Assessments</h3>
-            <p>Completed: 96</p>
-            <p>Projects Added: 242</p>
-          </div>
+
         </div>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <div class="stats">
+
+          <div class="stat">
+
+            <div class="label">
+              Active Users
+            </div>
+
+            <div
+              class="value"
+              id="analyticsActiveUsers"
+            >
+              0
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="label">
+              Skills Added
+            </div>
+
+            <div
+              class="value"
+              id="analyticsSkillsAdded"
+            >
+              0
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="label">
+              Skills Verified
+            </div>
+
+            <div
+              class="value"
+              id="analyticsSkillsVerified"
+            >
+              0
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="label">
+              Resume Generations
+            </div>
+
+            <div
+              class="value"
+              id="analyticsResumeGenerations"
+            >
+              0
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= ANALYTICS CARDS ================= -->
+
+        <div class="grid grid3">
+
+
+          <!-- DEPARTMENTS -->
+
+          <div class="card">
+
+            <h3>
+              Department Statistics
+            </h3>
+
+
+            <div
+              id="departmentStatistics"
+            >
+
+              <p>
+                Loading...
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- SEMESTERS -->
+
+          <div class="card">
+
+            <h3>
+              Semester Statistics
+            </h3>
+
+            <p
+              id="semesterStatistics"
+            >
+              Loading...
+            </p>
+
+          </div>
+
+
+          <!-- ASSESSMENTS -->
+
+          <div class="card">
+
+            <h3>
+              Assessments
+            </h3>
+
+            <p>
+              Completed:
+              <strong
+                id="completedAssessments"
+              >
+                0
+              </strong>
+            </p>
+
+            <p>
+              Projects Added:
+              <strong
+                id="projectsAdded"
+              >
+                0
+              </strong>
+            </p>
+
+          </div>
+
+
+        </div>
+
       </section>
+
     </main>
-    <div class="toast" id="toast"></div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div
+      class="toast"
+      id="toast"
+    ></div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/api.js"></script>
+
     <script src="../js/main.js"></script>
+
+    <script src="../js/admin.js"></script>
+
   </body>
 </html>

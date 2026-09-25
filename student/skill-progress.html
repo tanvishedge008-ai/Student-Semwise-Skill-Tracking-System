@@ -31,7 +31,7 @@
           placeholder="Search..."
         />
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span><span class="avatar" data-avatar></span>
         </div>
       </header>
       <section class="page">
@@ -44,41 +44,31 @@
         <div class="grid grid3">
           <div class="card">
             <h3>Semester-wise Progress</h3>
-            <div class="chart">
-              <div class="barwrap">
-                <div class="bar" style="height: 70px"></div>
-                <small>Sem 1</small>
-              </div>
-              <div class="barwrap">
-                <div class="bar" style="height: 100px"></div>
-                <small>Sem 2</small>
-              </div>
-              <div class="barwrap">
-                <div class="bar" style="height: 136px"></div>
-                <small>Sem 3</small>
-              </div>
-            </div>
+            <div class="chart" id="semesterProgress">
+  <p>Loading...</p>
+</div>
           </div>
           <div class="card">
-            <h3>Category-wise Progress</h3>
-            <p>Web Development — 78%</p>
-            <div class="progress"><span style="width: 78%"></span></div>
-            <p>Programming — 52%</p>
-            <div class="progress"><span style="width: 52%"></span></div>
-            <p>Database — 55%</p>
-            <div class="progress"><span style="width: 55%"></span></div>
-          </div>
-          <div class="card">
-            <h3>Assessment Scores</h3>
-            <p>Java Fundamentals — 72%</p>
-            <p>Python — 84%</p>
-            <p>Database — 80%</p>
-            <p>Web Development — 88%</p>
-          </div>
+  <h3>Category-wise Progress</h3>
+
+  <div id="categoryProgress">
+    <p>Loading...</p>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Assessment Scores</h3>
+
+  <div id="assessmentScores">
+    <p>Loading...</p>
+  </div>
+</div>
+                </div>
         </div>
       </section>
     </main>
     <div class="toast" id="toast"></div>
+    <script src="../js/api.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

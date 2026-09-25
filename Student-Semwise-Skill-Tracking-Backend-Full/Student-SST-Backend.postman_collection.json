@@ -1,0 +1,125 @@
+{
+  "info": {
+    "name": "Student SST Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/health"
+      }
+    },
+    {
+      "name": "Register Student",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Tanvi\", \"username\": \"tanvi\", \"password\": \"demo1234\", \"role\": \"Student\", \"email\": \"tanvi@example.com\", \"department\": \"Information Technology\", \"semester\": 3}"
+        },
+        "url": "http://localhost:8080/api/users/register"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"tanvi\", \"password\": \"demo1234\"}"
+        },
+        "url": "http://localhost:8080/api/users/login"
+      }
+    },
+    {
+      "name": "Get Students",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/students"
+      }
+    },
+    {
+      "name": "Add Skill",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Spring Boot\", \"category\": \"Programming\", \"level\": \"Beginner\", \"progress\": 20, \"semester\": 3, \"status\": \"Pending\", \"studentId\": 1}"
+        },
+        "url": "http://localhost:8080/api/skills"
+      }
+    },
+    {
+      "name": "Get Skills",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/skills"
+      }
+    },
+    {
+      "name": "Add Project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Student Skill Tracking System\", \"description\": \"Semester-wise skill tracking project\", \"tech\": \"HTML, CSS, JavaScript, Spring Boot, PostgreSQL\", \"semester\": 3, \"github\": \"#\", \"status\": \"In Progress\", \"verification\": \"Pending\", \"studentId\": 1}"
+        },
+        "url": "http://localhost:8080/api/projects"
+      }
+    },
+    {
+      "name": "Get Projects",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/projects"
+      }
+    },
+    {
+      "name": "Get Assessments",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/assessments"
+      }
+    },
+    {
+      "name": "Get Evidence",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/evidence"
+      }
+    },
+    {
+      "name": "Get Semesters",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/semesters"
+      }
+    }
+  ]
+}

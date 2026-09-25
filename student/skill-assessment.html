@@ -31,7 +31,7 @@
           placeholder="Search..."
         />
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span><span class="avatar" data-avatar></span>
         </div>
       </header>
       <section class="page">
@@ -47,7 +47,7 @@
             <p class="muted">10 questions • 15 minutes</p>
             <button
               class="btn"
-              onclick="toast('Demo assessment started for Java Fundamentals')"
+              onclick="startAssessment('Java Assessment', 'Java')"
             >
               Start Assessment
             </button>
@@ -87,7 +87,7 @@
             <p class="muted">10 questions • 15 minutes</p>
             <button
               class="btn"
-              onclick="toast('Demo assessment started for Data Structures')"
+              onclick="startAssessment('Data Structures Assessment', 'Data Structures')"
             >
               Start Assessment
             </button>
@@ -95,13 +95,14 @@
         </div>
         <div class="card" style="margin-top: 20px">
           <h3>Assessment Summary</h3>
-          <p>Completed: 3</p>
-          <p>Pending: 2</p>
-          <p>Average Score: 81%</p>
+          <p id="completedCount">Completed: 0</p>
+          <p id="pendingCount">Pending: 0</p>
+          <p id="averageScore">Average Score: 0%</p>
         </div>
       </section>
     </main>
     <div class="toast" id="toast"></div>
+    <script src="../js/api.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

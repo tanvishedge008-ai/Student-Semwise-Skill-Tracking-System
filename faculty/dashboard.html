@@ -29,7 +29,7 @@
           placeholder="Search..."
         />
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span><span class="avatar" data-avatar></span>
         </div>
       </header>
       <section class="page">
@@ -59,10 +59,12 @@
         </div>
         <div class="grid grid3">
           <div class="card">
-            <h3>Recent Verification</h3>
-            <p>Rahul Sharma — Java</p>
-            <span class="badge warning">Pending</span>
-          </div>
+  <h3>Recent Verification</h3>
+  <p id="recentVerification">No recent verification.</p>
+  <span class="badge warning" id="verificationStatus">
+    No pending verification
+  </span>
+</div>
           <div class="card">
             <h3>Department Progress</h3>
             <div class="progress"><span style="width: 71%"></span></div>
@@ -76,6 +78,8 @@
       </section>
     </main>
     <div class="toast" id="toast"></div>
-    <script src="../js/main.js"></script>
+    <script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/faculty.js"></script>
   </body>
 </html>

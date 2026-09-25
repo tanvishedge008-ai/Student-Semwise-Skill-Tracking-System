@@ -29,7 +29,7 @@
           placeholder="Search..."
         />
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span><span class="avatar" data-avatar></span>
         </div>
       </header>
       <section class="page">
@@ -51,36 +51,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Rahul Sharma</td>
-                <td>Java</td>
-                <td>Java Project / Certificate / GitHub</td>
-                <td class="status">
-                  <span class="badge warning">Pending</span>
-                </td>
-                <td>
-                  <button class="btn" onclick="toast('Evidence opened')">
-                    View
-                  </button>
-                  <button class="btn" onclick="verify(this)">Verify</button>
-                  <button class="btn danger" onclick="reject(this)">
-                    Reject
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Tanvi</td>
-                <td>PostgreSQL</td>
-                <td>Database Project</td>
-                <td class="status">
-                  <span class="badge warning">Pending</span>
-                </td>
-                <td>
-                  <button class="btn" onclick="verify(this)">Verify</button>
-                  <button class="btn danger" onclick="reject(this)">
-                    Reject
-                  </button>
-                </td>
+              <tbody id="evidenceTableBody">
+  <tr>
+    <td colspan="5">Loading evidence...</td>
+  </tr>
+</tbody>
               </tr>
             </tbody>
           </table>
@@ -88,6 +63,8 @@
       </section>
     </main>
     <div class="toast" id="toast"></div>
-    <script src="../js/main.js"></script>
+    <script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/faculty.js"></script>
   </body>
 </html>

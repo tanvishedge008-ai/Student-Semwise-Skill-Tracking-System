@@ -31,7 +31,7 @@
           placeholder="Search..."
         />
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span><span class="avatar" data-avatar></span>
         </div>
       </header>
       <section class="page">
@@ -117,9 +117,35 @@
                 </select>
               </div>
               <div class="form-group">
-                <label>Description / Evidence Link</label
-                ><textarea class="form-control"></textarea>
-              </div>
+  <label>Proof Type</label>
+  <select class="form-control" id="skillProofType">
+    <option value="">Select proof type</option>
+    <option value="Image Link">Image Link</option>
+    <option value="Certificate Link">Certificate Link</option>
+    <option value="GitHub Link">GitHub Link</option>
+    <option value="Project Link">Project Link</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label>Proof Link</label>
+  <input
+    class="form-control"
+    id="skillEvidence"
+    type="url"
+    placeholder="Paste image, certificate, GitHub or project link"
+  />
+</div>
+
+<div class="form-group">
+  <label>Description</label>
+  <textarea
+    class="form-control"
+    id="skillDescription"
+    placeholder="Briefly describe your proof"
+  ></textarea>
+</div>
               <button class="btn">Add Skill</button>
             </form>
           </div>
@@ -127,6 +153,7 @@
       </section>
     </main>
     <div class="toast" id="toast"></div>
+    <script src="../js/api.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

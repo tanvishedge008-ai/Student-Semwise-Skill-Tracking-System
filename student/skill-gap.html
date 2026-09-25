@@ -31,7 +31,7 @@
           placeholder="Search..."
         />
         <div class="profile-mini">
-          <span data-name>Tanvi</span><span class="avatar" data-avatar>T</span>
+          <span data-name></span><span class="avatar" data-avatar></span>
         </div>
       </header>
       <section class="page">
@@ -43,12 +43,11 @@
         </div>
         <div class="grid grid3">
           <div class="card">
-            <h3>Current Skills</h3>
-            <p>Java</p>
-            <p>HTML • CSS • JavaScript</p>
-            <p>SQL • PostgreSQL</p>
-            <p>Git</p>
-          </div>
+  <h3>Current Skills</h3>
+  <div id="currentSkills">
+    <p>Loading...</p>
+  </div>
+</div>
           <div class="card">
             <h3>Required Skills</h3>
             <p>Java • Spring Boot</p>
@@ -56,24 +55,24 @@
             <p>PostgreSQL • Git</p>
             <p>Frontend Development</p>
           </div>
-          <div class="card">
-            <h3>Missing / Developing</h3>
-            <p><b>Spring Boot — 20%</b></p>
-            <div class="progress"><span style="width: 20%"></span></div>
-            <br />
-            <p><b>REST API — 10%</b></p>
-            <div class="progress"><span style="width: 10%"></span></div>
-            <br /><button
-              class="btn"
-              onclick="toast('Learning roadmap opened')"
-            >
-              Start Learning
-            </button>
-          </div>
+          
         </div>
-      </section>
+      </section><div class="card">
+  <h3>Missing / Developing</h3>
+
+  <div id="skillGaps">
+    <p>Loading...</p>
+  </div>
+
+  <br />
+
+  <button class="btn" onclick="toast('Learning roadmap opened')">
+    Start Learning
+  </button>
+</div>
     </main>
     <div class="toast" id="toast"></div>
-    <script src="../js/main.js"></script>
+    <script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
   </body>
 </html>
